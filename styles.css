@@ -1,0 +1,24 @@
+/* Colors: https://www.digminecraft.com/lists/color_list_pc.php */
+:root {
+  --dark-red: #AA0000;
+  --red: #FF5555;
+  --gold: #FFAA00;
+  --yellow: #FFFF55;
+  --dark-green: #00AA00;
+  --green: #55FF55;
+  --aqua: #55FFFF;
+  --dark-aqua: #00AAAA;
+  --blue: #5555FF;
+  --dark-blue: #0000AA;
+  --light-purple: #FF55FF;
+  --dark-purple: #AA00AA;
+  --white: white;
+  --gray: #AAAAAA;
+  --dark-gray: #555555;
+  --black: black;
+}
+
+body {
+  background-color: var(--green);
+  color: #00AA00;
+}
