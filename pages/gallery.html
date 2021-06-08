@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../assets/stylesheets/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <title>MINECRAFT MADNESS!!! - Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide('#splide', {
+          type: 'fade',
+          rewind: true
+        }).mount();
+      } ); 
+    </script>
   </head>
   <body>
     <h1>
@@ -13,8 +23,22 @@
     </h1>
     
     <h2>Gallery</h2>
-
-    <figure>
+    <div class="splide" id="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img class="w-100" src="../assets/images/turtle-pond.png" alt="Turtle Pond" />
+          </li>
+          <li class="splide__slide">
+            <img class="w-100" src="../assets/images/coral-reef.png" alt="Coral Reef" />
+          </li>
+          <li class="splide__slide">
+            <img class="w-100" src="../assets/images/bone-woods.png" alt="Bone woods" /> 
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <figure>
       <img class="w-100" src="../assets/images/turtle-pond.png" alt="Turtle Pond" />
       <figcaption>My turtle looks cheeky.</figcaption>
     </figure>
@@ -27,7 +51,7 @@
     <figure>
       <img class="w-100" src="../assets/images/bone-woods.png" alt="Bone woods" />
       <figcaption>Bone woods from the roller coster.</figcaption>
-    </figure>
+    </figure> -->
 
     <a href="../index.html">Home</a>
 
